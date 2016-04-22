@@ -1,0 +1,37 @@
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  font-family: Monaco;
+}
+
+p {
+  font-size: 2em;
+  margin: 200;
+  opacity: .95;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+p:hover {
+  text-shadow: 15px 40px 1px grey, -4px -8px 1px red, 0px 18px 3px purple ;
+}
+
+#mwss {
+  height: 90%;
+  opacity: .15;
+  transition: all 1.5s;
+}
+
+#mwss:hover {
+  opacity: .35;
+}
+
+#lobby-art {
+  -webkit-filter: invert(1);
+  opacity: .35;
+  height: 10%;
+  float: right;
+}
