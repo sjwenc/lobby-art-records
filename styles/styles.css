@@ -7,27 +7,14 @@ body {
   letter-spacing: 0.3em;
 }
 
-#landing {
+#page-container {
   align-items: center;
   display: flex;
   flex-direction: column;
   width: 940px;
   box-sizing: border-box;
-  margin: 15px auto 0 auto;
-}
-
-#page-container {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  width: 940px;
-  box-sizing: border-box;
-  margin: 15px auto 0 auto;
-}
-
-#left-column {
-  height: 100%
+  margin: 0 auto 0 auto;
+  padding: 15 0;
 }
 
 a {
@@ -39,8 +26,7 @@ a {
 #nav {
   display: flex;
   flex-direction: row;
-  margin: 0 30;
-  padding: 0 5;
+  margin: 0 185;
   text-align: center;
 }
 
@@ -54,7 +40,7 @@ a {
   font-size: 12;
   font-style: italic;
   flex-grow: 1;
-  margin: 1em;
+  margin: 1em 5em;
   transition: all 0.5s;
 }
 
@@ -65,34 +51,30 @@ a {
 }
 
 #content {
-  height: 100%;
-  width: 100%;
   padding: 1em;
-}
-
-#art-container {
-  padding: 2em;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-#releases {
-  padding: 2em;
+#records {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-#releases a img {
+#records a img {
   border: 1px solid;
   border-color: #fff;
   transition: all 0.5s;
 }
 
-#releases a img:hover {
+#records a img:hover {
   border-color: grey;
   opacity: .85;
 }
 
-#art {
+#art-frame {
   border:none;
   width:675px;
   height: 2250px
