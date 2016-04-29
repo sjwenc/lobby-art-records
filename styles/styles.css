@@ -65,12 +65,11 @@ a {
 
 #records a img {
   border: 1px solid;
-  border-color: #fff;
+  border-color: ghostwhite;
   transition: all 0.5s;
 }
 
 #records a img:hover {
-  border-color: grey;
   opacity: .85;
 }
 
@@ -78,4 +77,8 @@ a {
   border:none;
   width:675px;
   height: 2250px
+}
+
+#album-cover-big {
+  border: 1px solid ghostwhite;
 }
