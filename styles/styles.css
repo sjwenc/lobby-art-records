@@ -61,12 +61,15 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 750px;
 }
 
 #records a img {
   border: 1px solid;
   border-color: ghostwhite;
   transition: all 0.5s;
+  height: 225px;
+  margin: 0 23 0 0;
 }
 
 #records a img:hover {
@@ -75,8 +78,8 @@ a {
 
 #art-frame {
   border:none;
-  width:675px;
-  height: 2250px
+  width:750px;
+  height: 2500px
 }
 
 #album-cover-big {
