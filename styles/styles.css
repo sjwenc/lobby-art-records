@@ -13,7 +13,7 @@ body {
   width: 940px;
   box-sizing: border-box;
   margin: 0 auto 0 auto;
-  padding: 15 0;
+  padding: 1em 0;
 }
 
 a {
@@ -26,12 +26,6 @@ a {
   display: flex;
   flex-direction: row;
   margin: 0 185;
-  text-align: center;
-}
-
-#nav2 {
-  margin: 0 30 40;
-  padding: 0 5;
   text-align: center;
 }
 
@@ -64,19 +58,29 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 750px;
 }
 
-#records a img {
+.record a img {
   border: 1px solid;
   border-color: ghostwhite;
   transition: all 0.5s;
-  height: 225px;
-  margin: 0 23 0 0;
+  height: 260px;
+  margin: 0 25px;
 }
 
-#records a img:hover {
+.record a img:hover {
   opacity: .85;
+}
+
+.record .record-text {
+  opacity: 0;
+  height: 25px;
+  margin: 0 25px 35px;
+  transition: all 0.5s;
+}
+
+.record:hover .record-text{
+  opacity: 1;
 }
 
 #art-frame {
