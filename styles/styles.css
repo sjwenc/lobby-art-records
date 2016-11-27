@@ -1,3 +1,5 @@
+/* page stuff */
+
 body {
   height: 100%;
   width: 100%;
@@ -22,6 +24,16 @@ a {
   color: #000;
 }
 
+p.spaced {
+  letter-spacing: 0.3em;
+}
+
+p {
+  text-align: center;
+}
+
+/* nav */
+
 #nav {
   display: flex;
   flex-direction: row;
@@ -44,6 +56,8 @@ a {
   border-bottom: none;
 }
 
+/* page content */
+
 #content {
   padding: 1em;
   align-items: center;
@@ -53,6 +67,16 @@ a {
   animation-duration: 1.5s;
   width: 100%;
 }
+
+/* art page */
+
+#art-frame {
+  border:none;
+  width:750px;
+  height: 2500px
+}
+
+/* record page */
 
 #records {
   display: flex;
@@ -83,11 +107,7 @@ a {
   opacity: 1;
 }
 
-#art-frame {
-  border:none;
-  width:750px;
-  height: 2500px
-}
+/* album pages */
 
 #album-page-content {
   padding: 1em;
@@ -106,22 +126,32 @@ a {
   padding: 1em;
 }
 
-#album-cover-big {
+#album-image-container {
   border: 1px solid ghostwhite;
+  transition: all 1s;
+
+}
+
+#album-cover-big {
+  display: inline;
+}
+#album-image-container:hover #album-cover-big {
+  display: none;
+  animation-name: fadeout;
+  animation-duration: 1s;
+}
+
+#cassette-mockup {
+  display: none;
+}
+#album-image-container:hover #cassette-mockup {
+  display: inline;
 }
 
 #bandcamp {
   border: 0;
   margin-bottom: 13px;
   height: 42px;
-}
-
-p.spaced {
-  letter-spacing: 0.3em;
-}
-
-p {
-  text-align: center;
 }
 
 /* animations */
