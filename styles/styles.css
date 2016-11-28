@@ -1,3 +1,5 @@
+/* page stuff */
+
 body {
   height: 100%;
   width: 100%;
@@ -13,7 +15,7 @@ body {
   width: 940px;
   box-sizing: border-box;
   margin: 0 auto 0 auto;
-  padding: 15 0;
+  padding: 1em 0;
 }
 
 a {
@@ -22,16 +24,20 @@ a {
   color: #000;
 }
 
+p.spaced {
+  letter-spacing: 0.3em;
+}
+
+p {
+  text-align: center;
+}
+
+/* nav */
+
 #nav {
   display: flex;
   flex-direction: row;
   margin: 0 185;
-  text-align: center;
-}
-
-#nav2 {
-  margin: 0 30 40;
-  padding: 0 5;
   text-align: center;
 }
 
@@ -50,6 +56,8 @@ a {
   border-bottom: none;
 }
 
+/* page content */
+
 #content {
   padding: 1em;
   align-items: center;
@@ -60,30 +68,46 @@ a {
   width: 100%;
 }
 
-#records {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 750px;
-}
-
-#records a img {
-  border: 1px solid;
-  border-color: ghostwhite;
-  transition: all 0.5s;
-  height: 225px;
-  margin: 0 23 0 0;
-}
-
-#records a img:hover {
-  opacity: .85;
-}
+/* art page */
 
 #art-frame {
   border:none;
   width:750px;
   height: 2500px
 }
+
+/* record page */
+
+#records {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.record a img {
+  border: 1px solid;
+  border-color: ghostwhite;
+  transition: all 0.5s;
+  height: 260px;
+  margin: 0 25px;
+}
+
+.record a img:hover {
+  opacity: .85;
+}
+
+.record .record-text {
+  opacity: 0;
+  height: 25px;
+  margin: 0 25px 35px;
+  transition: all 0.5s;
+}
+
+.record:hover .record-text{
+  opacity: 1;
+}
+
+/* album pages */
 
 #album-page-content {
   padding: 1em;
@@ -102,22 +126,33 @@ a {
   padding: 1em;
 }
 
-#album-cover-big {
+#album-image-container {
   border: 1px solid ghostwhite;
+  transition: all 1s;
+
+}
+
+#album-cover-big {
+  display: inline;
+}
+#album-image-container:hover #album-cover-big {
+  display: none;
+  animation-name: fadeout;
+  animation-duration: 1s;
+}
+
+#cassette-mockup {
+  display: none;
+}
+#album-image-container:hover #cassette-mockup {
+  display: inline;
 }
 
 #bandcamp {
   border: 0;
   margin-bottom: 13px;
   height: 42px;
-}
-
-p.spaced {
-  letter-spacing: 0.3em;
-}
-
-p {
-  text-align: center;
+  width: 50%;
 }
 
 /* animations */
